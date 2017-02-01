@@ -9,23 +9,27 @@ Um encurtador de URLs baseado em laravel
 
 -Listagem das URLs cadastradas
 
+-URLs cadastradas mostram o nome do usuário que as cadastrou, porém, se ninguém estiver logado, mostra como anônimo
+
 -Redirecionamento quando se clica na URL
 
 -Contador de cliques por link
 
 -Um plugin para organizar as listagens por cliques (DataTables)
 
+-Login e Registro
+
+-Área de usuário
+
 ## Falta fazer:
 
--Toda a área de usuário
-
--Registro de usuário
+-Usar o sistema de auth do laravel
 
 ## Método de abordagem:
 
 -O usuário coloca um link de algum site, o qual passa por uma hash crc32 (retorna apenas 8 letras/digitos).
 
--Ambos os dados são salvos na base de dados, juntamente com o criador (por enquanto todos são anônimos) e uma quantidade de cliques 0.
+-Ambos os dados são salvos na base de dados, juntamente com o criador e uma quantidade de cliques 0.
 
 -Uma lista busca todas as entradas da tabela e as expõe pro usuário.
 
